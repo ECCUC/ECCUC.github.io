@@ -8,13 +8,23 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://d3js.org/d3.v7.js"></script>
     <script src="https://d3js.org/d3-geo-projection.v4.min.js"></script>
-    <title>OECD Graduates per countries </title>
+    <title>annex Stats per country </title>
 </head>
 <body>
     <div class="container">
-        <h1>World Map View</h1>
-
-
+        <h1>Annex 86 World Map View</h1>
         <div id="vis-1"></div>
         <script src="config.js"></script>
+        <h3 id="categoryHeader">Visualize Statistics</h3>
+        <select id="elementSelect" onchange="showSelectedElement()">
+            <option value="Mean">Mean</option>
+            <option value="N">N</option>
+            <option value="NAs">NAs</option>
+            <option value="Nestim">Nestim</option>
+            <option value="Sd">Sd</option>
+            <option value="country">Country</option>
+            <option value="interval_Max">Interval Max</option>
+            <option value="interval_Mean">Interval Mean</option>
+            <option value="interval_Median">Interval Median</option>
+        </select>
 </body>

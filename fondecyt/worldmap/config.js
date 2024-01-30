@@ -7,6 +7,11 @@ const HEIGHT_VIS_1 =650;
 
 SVG1.attr("width", WIDTH_VIS_1).attr("height", HEIGHT_VIS_1);
 
+// read csv summary info
+d3.csv("data/example_data.csv").then(function(data) {
+  console.log(data);
+});
+
 
 createWorldMap();
 
@@ -55,6 +60,9 @@ function createWorldMap(data) {
             .style("left", event.pageX + "px")
             .style("top", event.pageY + "px");
         })
+        .on("click", function(event, d) {
+          console.log(d.properties.name_english);
+        })
         .on("mouseout", function() {
           d3.select(this)
             .attr("stroke-width", 1)
@@ -62,6 +70,7 @@ function createWorldMap(data) {
   
           // Hide tooltip on mouseout
           info.style("display", "none");
-        });
+        })
+        ;
     });
 }

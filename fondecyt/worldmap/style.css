@@ -26,4 +26,5 @@ body {
 
 svg {
     background-color: white;
+    border: solid 2px white; /* Add a border */
 }
