@@ -93,7 +93,7 @@ function PrintWorldMap(data, geoData, selectedCategory) {
   // Create a linear color scale
   const colorScale = d3.scaleLinear()
     .domain([minValue, maxValue])
-    .range(["yellow", "orange"]); // Adjust the color range as needed
+    .range(["yellow", "red"]); // Adjust the color range as needed
 
   // Append country shapes for the data received with color based on the selected category
   SVG1.selectAll(".country")
