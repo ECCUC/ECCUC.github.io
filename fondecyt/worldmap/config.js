@@ -1,4 +1,4 @@
-// main.js
+
 const SVG1 = d3.select("#vis-1").append("svg"); //WORLD MAP
 
 // World map

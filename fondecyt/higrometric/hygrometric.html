@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v4.min.js"></script>
+
+    <title>Confort inside houses</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Santiago sensors ubication</h1>
+        <button onclick="zoomOut()">-</button>
+        <button onclick="zoomIn()">+</button>
+        <button onclick="resetZoom()">Reset</button>
+        <div id="vis-0"></div>
+        <h3 id="categoryHeader">Select sensor</h3>
+        <select id="elementSelect">
+            <!-- Sensor Numbers -->
+            <option value= "Null">-</option>
+            <option value="46813.csv">46813</option>
+            <option value="154697.csv">154697</option>
+            <option value="154485.csv">154485</option>
+            <option value="152632.csv">152632</option>
+            <option value="151572.csv">151572</option>
+            <option value="153560.csv">153560</option>
+            <option value="154183.csv">154183</option>
+            <option value="154563.csv">154563</option>
+            <option value="154561.csv">154561</option>
+            <option value="36051.csv">36051</option>
+            <option value="154703.csv">154703</option>
+            <option value="154701.csv">154701</option>
+            <option value="154463.csv">154463</option>
+            <option value="154699.csv">154699</option>
+            <option value="33105.csv">33105</option>
+        </select>
+        <h1>Psychometric chart</h1>
+        <div id="vis-1"></div>
+        <script src="config.js"></script>
+        <h4>Notice yellow parts indicates where points are more concentrated</h4>
+    </div>
+</body>
+
+</html>

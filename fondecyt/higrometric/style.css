@@ -1,0 +1,30 @@
+body {
+    margin: 0 auto;
+    /* Puedes cambiar el color de fondo (background-color) si lo deseas */
+    background-color: rgb(255, 255, 255);
+    max-width: 1200px;
+    min-width: 500px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+/* Add this CSS code to your CSS file */
+
+/* Tooltip style */
+.info {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    pointer-events: none;
+    display: none;
+    z-index: 999; /* Ensure it's above other elements */
+  }
+
+svg {
+    background-color: white;
+    border: solid 2px black; /* Add a border */
+}

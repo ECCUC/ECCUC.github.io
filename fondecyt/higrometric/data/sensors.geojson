@@ -1,0 +1,22 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "COD": 154557, "ID": "2AC7ZESPWROOM02", "latitude": -33.47907, "longitude": -70.60694 }, "geometry": { "type": "Point", "coordinates": [ -70.60694, -33.47907 ] } },
+{ "type": "Feature", "properties": { "COD": 152632, "ID": "2AC7ZESPWROOM02", "latitude": -33.51352, "longitude": -70.71586 }, "geometry": { "type": "Point", "coordinates": [ -70.71586, -33.51352 ] } },
+{ "type": "Feature", "properties": { "COD": 154703, "ID": "2AC7ZESPWROOM02", "latitude": -33.5228, "longitude": -70.7717 }, "geometry": { "type": "Point", "coordinates": [ -70.7717, -33.5228 ] } },
+{ "type": "Feature", "properties": { "COD": 154699, "ID": "2AC7ZESPWROOM02", "latitude": -33.5396, "longitude": -70.6468 }, "geometry": { "type": "Point", "coordinates": [ -70.6468, -33.5396 ] } },
+{ "type": "Feature", "properties": { "COD": 154561, "ID": "2AC7ZESPWROOM02", "latitude": -33.5021, "longitude": -70.6559 }, "geometry": { "type": "Point", "coordinates": [ -70.6559, -33.5021 ] } },
+{ "type": "Feature", "properties": { "COD": 154563, "ID": "2AC7ZESPWROOM02", "latitude": -33.4915, "longitude": -70.6186 }, "geometry": { "type": "Point", "coordinates": [ -70.6186, -33.4915 ] } },
+{ "type": "Feature", "properties": { "COD": 151572, "ID": "2AC7ZESPWROOM02", "latitude": -33.4911, "longitude": -70.59791 }, "geometry": { "type": "Point", "coordinates": [ -70.59791, -33.4911 ] } },
+{ "type": "Feature", "properties": { "COD": 153560, "ID": "Matias G", "latitude": -33.47119, "longitude": -70.58907 }, "geometry": { "type": "Point", "coordinates": [ -70.58907, -33.47119 ] } },
+{ "type": "Feature", "properties": { "COD": 154697, "ID": "2AC7ZESPWROOM02", "latitude": -33.47119, "longitude": -70.58907 }, "geometry": { "type": "Point", "coordinates": [ -70.58907, -33.47119 ] } },
+{ "type": "Feature", "properties": { "COD": 36051, "ID": "La Reina", "latitude": -33.46744, "longitude": -70.58537 }, "geometry": { "type": "Point", "coordinates": [ -70.58537, -33.46744 ] } },
+{ "type": "Feature", "properties": { "COD": 154701, "ID": "2AC7ZESPWROOM02", "latitude": -33.46311, "longitude": -70.5932 }, "geometry": { "type": "Point", "coordinates": [ -70.5932, -33.46311 ] } },
+{ "type": "Feature", "properties": { "COD": 154183, "ID": "2AC7ZESPWROOM02", "latitude": -33.46311, "longitude": -70.5932 }, "geometry": { "type": "Point", "coordinates": [ -70.5932, -33.46311 ] } },
+{ "type": "Feature", "properties": { "COD": 154463, "ID": "2AC7ZESPWROOM02", "latitude": -33.44946, "longitude": -70.61022 }, "geometry": { "type": "Point", "coordinates": [ -70.61022, -33.44946 ] } },
+{ "type": "Feature", "properties": { "COD": 46813, "ID": "Fondecyt 11190349 Sensor 44", "latitude": -33.44946, "longitude": -70.61022 }, "geometry": { "type": "Point", "coordinates": [ -70.61022, -33.44946 ] } },
+{ "type": "Feature", "properties": { "COD": 33105, "ID": "Vitacura Santiago", "latitude": -33.4531, "longitude": -70.6478 }, "geometry": { "type": "Point", "coordinates": [ -70.6478, -33.4531 ] } },
+{ "type": "Feature", "properties": { "COD": 154485, "ID": "2AC7ZESPWROOM02 ", "latitude": -33.4901, "longitude": -70.6125 }, "geometry": { "type": "Point", "coordinates": [ -70.6125, -33.4901 ] } }
+]
+}
