@@ -154,7 +154,6 @@ function resetZoom() {
 /*Psychometric chart*/
 function DrawPsychometricChart(sensor) {
 
-    SVG1.selectAll("*").remove();
 
 
     // Set the dimensions and margins of the graph
@@ -332,6 +331,8 @@ function DrawPsychometricChart(sensor) {
 
 /* Function to discribe the concentration of every sensor of the pair (temperature, A.Humidity) */
 function drawConcentratedCircle(sensorDataPath, xScale, yScale, width, height) {
+    SVG1.selectAll("circle").remove();
+
     d3.csv(sensorDataPath).then(data => {
         // Convert data to numbers if needed
         data.forEach(d => {
