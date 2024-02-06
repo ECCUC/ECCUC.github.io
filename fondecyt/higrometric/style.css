@@ -1,7 +1,7 @@
 body {
     margin: 0 auto;
     /* Puedes cambiar el color de fondo (background-color) si lo deseas */
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(249, 244, 244);
     max-width: 1200px;
     min-width: 500px;
     text-align: center;
@@ -27,4 +27,14 @@ body {
 svg {
     background-color: white;
     border: solid 2px black; /* Add a border */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

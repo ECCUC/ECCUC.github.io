@@ -109,7 +109,22 @@ function drawGeoJSON(geoJSON, sensors) {
     .on("click", function (event, d) {
         // Call DrawPsychometricChart function with the sensor ID or relevant data
         DrawPsychometricChart(`${d.properties.COD}.csv`);
+    
+        // Modify the h3 element with the ID "sensor" using d.properties.COD
+        const sensorElement = document.getElementById("sensor");
+        if (sensorElement) {
+            sensorElement.textContent = `Sensor: ${d.properties.COD}`;
+        }
+    
+        const targetElement = document.getElementById("vis-1");
+        if (d.properties.COD !== undefined) {
+            targetElement.scrollIntoView({ behavior: 'auto' });
+        }
+    
+        // Prevent the default click behavior (optional)
+        event.preventDefault();
     });
+    
 
 }
 
@@ -153,7 +168,10 @@ function resetZoom() {
 
 /*Psychometric chart*/
 function DrawPsychometricChart(sensor) {
-
+    const sensorElement = document.getElementById("sensor");
+    if (sensorElement) {
+        sensorElement.textContent = `Sensor: ${removeLastFourCharacters(sensor)}`;
+    }
 
 
     // Set the dimensions and margins of the graph
@@ -369,4 +387,17 @@ function drawConcentratedCircle(sensorDataPath, xScale, yScale, width, height) {
 }
 }
 
-/* Notice i put this function inside the other funnction because the parameter margin is out of the scope */
+function removeLastFourCharacters(inputString) {
+    // Check if the string length is greater than 4
+    if (inputString.length > 4) {
+      return inputString.slice(0, -4);
+    }
+  
+    // If the length is 4 or less, return an empty string or the original string as needed
+    return '';
+  }
+  
+  
+  
+
+/* Notice I put this function inside the other function because the parameter margin is out of the scope */
