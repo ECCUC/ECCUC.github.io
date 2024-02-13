@@ -1,12 +1,22 @@
+p {
+    color: black;
+    text-align: justify;
+
+}
+
+h4 {
+    font-weight: bold;
+}
+
 body {
     margin: 0 auto;
     /* Puedes cambiar el color de fondo (background-color) si lo deseas */
     background-color: rgb(249, 244, 244);
-    max-width: 1200px;
+    max-width: 900px;
     min-width: 500px;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 

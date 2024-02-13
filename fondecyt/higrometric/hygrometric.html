@@ -9,16 +9,26 @@
     <script src="https://d3js.org/d3.v7.js"></script>
     <script src="https://d3js.org/d3-geo-projection.v4.min.js"></script>
 
-    <title>Confort inside houses</title>
+    <title>Confort inside chilean houses 🇨🇱x§</title>
 </head>
 
 <body>
     <div class="container">
-        <h1>Santiago sensors ubication</h1>
-        <button onclick="zoomOut()">-</button>
-        <button onclick="zoomIn()">+</button>
-        <button onclick="resetZoom()">Reset</button>
-        <div id="vis-0"></div>
+        <br>
+        <h3>About the Psychometric Chart</h3>
+        <p>Originally developed by the Israeli architect Baruch Givoni, this chart serves as a tool to identify the comfort zones in Chilean living spaces.</p>
+        <p>The psychometric chart visually represents the intricate interplay between temperature, absolute humidity, and the enthalpy of the air.</p>
+        <p>This specific psychometric chart is crafted using academic data from the Civil Construction school of the Pontifical Catholic University of Chile (PUC).</p>
+        <p>The psychometric chart is a powerful tool for understanding the environmental conditions that contribute to human comfort. It plots key parameters like temperature (X Axis) and absolute humidity (Y axis), providing a graphical representation of the confort inside living places</p>
+        <p>In practical terms, the chart helps professionals in the fields of architecture and HVAC (Heating, Ventilation, and Air Conditioning) design to assess and optimize indoor environmental conditions. By identifying the comfort zone on the chart, one can determine whether a given combination of temperature and humidity levels is conducive to human well-being.</p>
+        <p>Understanding the psychometric chart is crucial for creating spaces that are not only aesthetically pleasing but also ensure optimal comfort and well-being for occupants.</p>
+        <br>
+        <h3>About the sensors</h3>
+        <p>These sensors are strategically located in Santiago, Chile, capturing comprehensive temperature and absolute humidity data over the course of an entire year.</p>
+        <h3>About the data</h3>
+        <p>The data for these sensors originates from PurpleAir, a leading provider of air quality monitoring solutions. PurpleAir's network of sensors provides accurate and real-time information on air quality, contributing to our understanding of environmental conditions in Santiago, Chile.</p>
+        <h3>How the Psychometric Chart Works</h3>
+        <p>By selecting a sensor from the dropdown menu (or selecting the sensor on the map), you can visualize the data from that specific location on the psychometric chart. The chart will display the temperature and absolute humidity data for the selected sensor, allowing you to identify the comfort zone for that specific location.</p>
         <h3 id="categoryHeader">Select sensor</h3>
         <select id="elementSelect">
             <!-- Sensor Numbers -->
@@ -39,12 +49,19 @@
             <option value="154699.csv">154699</option>
             <option value="33105.csv">33105</option>
         </select>
-        <h1>Psychometric chart</h1>
+        <h2>Psychometric chart</h2>
         <h3 id="sensor"></h3>
         <div id="vis-1"></div>
-        <script src="config.js"></script>
-        <h4>Notice yellow parts indicates where points are more concentrated</h4>
+        <h4>Notice yellow parts indicates where points are more concentrated</h4>  
+        <h2>Santiago sensors ubication</h2>
+        <button onclick="zoomOut()">-</button>
+        <button onclick="zoomIn()">+</button>
+        <button onclick="resetZoom()">Reset</button>
+        <div id="vis-0"></div>
+        <script src="config.js"></script>   
+  
     </div>
+   
 </body>
 
 </html>

@@ -61,7 +61,7 @@ function drawGeoJSON(geoJSON, sensors) {
         .attr("d", path)
         .attr("stroke", "black")
         .attr("stroke-width", 1)
-        .attr("fill", "lightblue")
+        .attr("fill", "rgba(255, 165, 0, 0.5)")
         .on("mouseover", function (event, d) {
             d3.select(this)
                 .attr("stroke-width", 2)
@@ -95,7 +95,7 @@ function drawGeoJSON(geoJSON, sensors) {
             .attr("r", 5);
 
         info.style("display", "block")
-            .html(`<strong>sensor:</strong> ${d.properties.ID}`)
+            .html(`<strong>sensor:</strong> ${d.properties.COD}`)
             .style("left", event.pageX + "px")
             .style("top", event.pageY + "px");
     })
@@ -386,6 +386,7 @@ function drawConcentratedCircle(sensorDataPath, xScale, yScale, width, height) {
     });
 }
 }
+/* Notice I put this function inside the other function because the parameter margin is out of the scope */
 
 function removeLastFourCharacters(inputString) {
     // Check if the string length is greater than 4
@@ -400,4 +401,3 @@ function removeLastFourCharacters(inputString) {
   
   
 
-/* Notice I put this function inside the other function because the parameter margin is out of the scope */
